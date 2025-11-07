@@ -22,24 +22,29 @@ A simple, modern backend starter using Express, TypeScript, Zod, and JWT authent
 
 ## ⚙️ Setup
 1. Install dependencies
+```
 npm install
-
-2. Add .env
-APP_HOST=localhost/n
-APP_PORT=3000/n
-AUTH_SECRET=your_jwt_secret/n
-AUTH_SECRET_EXPIRES_IN=15m/n
+```
+3. Add .env
+```
+APP_HOST=localhost
+APP_PORT=3000
+AUTH_SECRET=your_jwt_secret
+AUTH_SECRET_EXPIRES_IN=15m
 DATABASE_URL="your_database_connection_url"
-
+```
 4. Run in dev mode
+```
 npm run dev
-
-5. Build for production
+```
+6. Build for production
+```
 npm run build
-
-6. Start production build
+```
+8. Start production build
+```
 npm start
-
+```
 🧠 Example Routes
 Method	Endpoint	Description	Auth Required
 POST	/api/auth/register	Create a new user	❌
