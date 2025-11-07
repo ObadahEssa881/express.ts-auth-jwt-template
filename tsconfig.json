@@ -2,15 +2,8 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
   "outDir": "./dist",
-  "rootDir": "./src",
-  "baseUrl": "./src",
-  "paths": {
-      "@config/*": ["config/*"],
-      "@middlewares/*": ["middlewares/*"],
-      "@controllers/*": ["controllers/*"],
-      "@routes/*": ["routes/*"],
-      "@utils/*": ["utils/*"]
-    },
+  // "rootDir": "./src",
+  
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
@@ -47,5 +40,7 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+    // "esModuleInterop": true,
+    // "allowSyntheticDefaultImports": true,
   }
 }
