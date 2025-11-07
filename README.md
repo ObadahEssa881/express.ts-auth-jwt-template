@@ -25,19 +25,19 @@ A simple, modern backend starter using Express, TypeScript, Zod, and JWT authent
 npm install
 
 2. Add .env
-APP_HOST=localhost
-APP_PORT=3000
-AUTH_SECRET=your_jwt_secret
-AUTH_SECRET_EXPIRES_IN=15m
+APP_HOST=localhost/n
+APP_PORT=3000/n
+AUTH_SECRET=your_jwt_secret/n
+AUTH_SECRET_EXPIRES_IN=15m/n
 DATABASE_URL="your_database_connection_url"
 
-3. Run in dev mode
+4. Run in dev mode
 npm run dev
 
-4. Build for production
+5. Build for production
 npm run build
 
-5. Start production build
+6. Start production build
 npm start
 
 🧠 Example Routes
