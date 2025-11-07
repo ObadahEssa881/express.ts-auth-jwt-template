@@ -1,9 +1,11 @@
 import type { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import { ENV } from "../config/env.config.js";
+import type { jwtPayload } from "../types/jwt-payload.js";
+import { verifyToken } from "../utils/jwt.js";
 
 export interface authRequest extends Request {
-  user?: any;
+  user?: jwtPayload;
 }
 
 export const authGuard = (
@@ -21,7 +23,7 @@ export const authGuard = (
     }
     const token = header.split(" ")[1];
     if (!ENV.secret) throw new Error("JWT secret not configured");
-    const decode = jwt.verify(token!, ENV.secret);
+    const decode = verifyToken(token!);
     req.user = decode;
     next();
   } catch (error: any) {
