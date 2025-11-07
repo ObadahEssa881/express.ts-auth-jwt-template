@@ -15,7 +15,7 @@ export const authGuard = (
 ) => {
   try {
     const header = req.headers.authorization;
-    if (!header || !header.startsWith("Bearer  ")) {
+    if (!header || !header.startsWith("Bearer ")) {
       return res.status(401).json({
         success: false,
         message: "Unauthorized",

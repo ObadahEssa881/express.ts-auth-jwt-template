@@ -24,6 +24,6 @@ export class authService {
     if (!valid) throw new Error("invalid credentials");
 
     const token = generateToken({ id: user.id, email: user.email });
-    return { token };
+    return token;
   }
 }
